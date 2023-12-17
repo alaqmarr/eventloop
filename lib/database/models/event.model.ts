@@ -1,4 +1,4 @@
-import { Document, Schema, model, models } from "mongoose";
+import { Schema, model, models, Document } from 'mongoose'
 
 export interface IEvent extends Document {
   _id: string;
@@ -12,7 +12,7 @@ export interface IEvent extends Document {
   price: string;
   isFree: boolean;
   url?: string;
-  category: { _id: string, name: string }
+  category: { _id: string, name: string };
   organizer: { _id: string, firstName: string, lastName: string }
 }
 
